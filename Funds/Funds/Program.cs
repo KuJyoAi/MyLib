@@ -15,11 +15,14 @@ namespace Funds
         {
             FundData fd = new FundData("003096", "2021-01-06", "2021-07-08");
             fd.print();
+
+            StrategyH(fd, 7, 0);
         }
     }
     class StrategyH
     {
         FundData data;
+        List<int> pos = new List<int>();
         int period = 0;
         int type = 0;
         /*策略:
@@ -39,12 +42,22 @@ namespace Funds
         public double AvgValue = 0;//平均净值
         
         //历史性定投计算器:定投周期,定投金额,目标止盈率
-        StrategyH(FundData fd,int period)
+        public StrategyH(FundData fd,int period,int StartIndex)
         {
             this.period = period;
-            for (int i = 0; i < fd.dt.Count; i++)
+            data = fd;
+            //截取定投所需的位置
+            DateTime date = fd.dt[StartIndex];
+            for (int i = StartIndex; i < fd.dt.Count;)
             {
-
+                pos.Add(i);
+                date.AddDays(period);
+                i = fd.dt.BinarySearch(date);
+                if (i < 0)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
             }
         }
         void run(int type)
