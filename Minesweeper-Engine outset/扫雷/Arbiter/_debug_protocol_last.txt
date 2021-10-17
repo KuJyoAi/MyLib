@@ -1,0 +1,22 @@
+21:16:46:817 preferences saved
+21:14:24:272 high score replay automatically saved
+21:14:21:686 beginner mode selected
+21:14:17:893 intermediate mode selected
+21:14:01:736 memory_usage: [21:14] 2147483647 ==> used 0
+21:14:01:735 beginner mode selected
+21:10:54:315 weird time
+21:09:24:565 intermediate mode selected
+21:09:21:346 ---
+21:09:21:345 who of them got the skills to test me?
+21:09:21:345 ---
+21:09:21:344 warp field stabilized. opening gate to the minesweeper world
+21:09:21:344 encrypt_engine test ok
+21:09:21:343 encrypt_engine testing ...
+21:09:21:342 ---
+21:09:21:341 language  | 00000409
+21:09:21:335 timezone  | 中国标准时间 (GMT +8:00)
+21:09:21:334 platform  | Windows NT 6.2 build 9200, 
+21:09:21:333 memory    | 2047,0 of 2047,0 MB RAM free
+21:09:21:333 cpu speed | run the command get_cpu_speed
+21:09:21:332 date      | Tue, 21.09.2021, process 0x001A0B3C launched
+21:09:21:323 path      | E:\GAMES\ARBITER\
